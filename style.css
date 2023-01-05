@@ -8,25 +8,39 @@ body {
   font-family: 'Roboto';
 }
 
+/*UTILITY CLASSES*/
+.btn-primary {
+  background-color: #1db954;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  font-weight: 750;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
 /*NAVBAR*/
 navbar {
   display: flex;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 navbar .navbar-container {
-  margin-left: 20px;
-  width: 90%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-}
-
-navbar .navbar-container .logo {
-  height: 40px;
-  width: auto;
 }
 
 navbar .navbar-container ul {
@@ -44,3 +58,45 @@ navbar .navbar-container ul li:nth-child(3) {
 }
 
 /*SHOWCASE*/
+.showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url(./assets/showcase.webp) center center/cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+
+.showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase .showcase-container h2 {
+  font-size: 5rem;
+}
+
+.showcase .showcase-container p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.footer-content .footer-menu {
+  margin: 0 40px;
+  list-style: none;
+}
