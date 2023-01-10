@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Roboto';
-  overflow-x: hidden;
 }
 
 /*UTILITY CLASSES*/
@@ -97,11 +97,12 @@ footer {
 .footer-content {
   display: flex;
   width: 85%;
+  justify-content: space-between;
   margin: auto;
 }
 
 .footer-content .footer-menu {
-  margin: 15px 48px;
+  margin: 15px 3px;
   list-style: none;
 }
 
